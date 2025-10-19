@@ -11,19 +11,21 @@
 
 **IMPORTANT:** This board requires the Nice!Nano board definition in PlatformIO.
 
-### PlatformIO Setup
+### Setup Process
 
-1. **Install PlatformIO** (if not already installed)
-2. **Add Nice!Nano board support:**
+1. **Install Nice!Nano PlatformIO Support**
+   - Follow instructions at: https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support
+   - This adds the `nicenano` board definition to PlatformIO
+
+2. **Configure your platformio.ini**
    ```ini
-   # In your platformio.ini file:
    [env:nrf52840_uf2]
    platform = nordicnrf52
    board = nicenano
    framework = arduino
    ```
 
-3. **Include this header in your project:**
+3. **Include our pin header in your project**
    ```cpp
    #include "nicenano_pins.h"
    ```
@@ -59,9 +61,11 @@ digitalWrite(P0_13, HIGH);  // Turn on 3.3V rail
 digitalWrite(P0_13, LOW);   // Turn off 3.3V rail (saves power!)
 ```
 
-## Credits
+## Dependencies
 
-This work builds upon the original [Nice!Nano](https://nicekeyboards.com/nice-nano/) design and **requires** the Nice!Nano PlatformIO board definition to function.
+This work depends on:
+1. **[Nice!Nano PlatformIO Support](https://github.com/ICantMakeThings/Nicenano-NRF52-Supermini-PlatformIO-Support)** - Provides the board definition
+2. **[Nice!Nano Hardware Design](https://nicekeyboards.com/nice-nano/)** - Original hardware specification
 
 ## Testing Methodology
 
