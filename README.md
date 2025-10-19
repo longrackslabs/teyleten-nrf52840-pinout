@@ -36,7 +36,7 @@ This repository contains systematically discovered pin mappings for the Teyleten
 
 <img width="1322" height="891" alt="image" src="https://github.com/user-attachments/assets/f9170a6f-6752-4039-ad7b-dad1217496f7" />
 
-This was the only pinout diagram I could find...
+This was the only pinout diagram I could find for any NRF52840.
 
 ### Pin Pattern Discovered
 
