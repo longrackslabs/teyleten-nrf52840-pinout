@@ -34,6 +34,10 @@
 
 This repository contains systematically discovered pin mappings for the Teyleten Robot Pro Micro NRF52840 board through methodical testing.
 
+<img width="1322" height="891" alt="image" src="https://github.com/user-attachments/assets/f9170a6f-6752-4039-ad7b-dad1217496f7" />
+
+This was the only pinout diagram I could find...
+
 ### Pin Pattern Discovered
 
 - **P0.XX = Arduino Pin X** (for X = 0-31)
