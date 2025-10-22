@@ -2,7 +2,7 @@
 
 ## Hardware
 
-**Board:** Teyleten Robot Pro Micro NRF52840  
+**Board:** Teyleten Robot Pro Micro NRF52840
 **Amazon Link:** https://a.co/d/785r35n  
 **Price:** ~$4  
 **Compatibility:** Nice!Nano v2 compatible  
@@ -47,6 +47,9 @@ This was the only pinout diagram I could find for any NRF52840.
 
 - **P0.13** - Controls 3.3V power rail (set LOW = power off, HIGH = power on)
 - **P0.14, P0.16** - Reserved pins that cause system issues (avoid using)
+
+## Power Bus Reset on Power Up
+I found that the 3.3V power rail reset and defaulted off on startup / reboot / power off.  To reset / enable short the BATTERY+ RAW pin and the RESET pin. I did this with a simple momentary button switch.
 
 ## Usage
 
